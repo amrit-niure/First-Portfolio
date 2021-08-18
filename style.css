@@ -164,3 +164,78 @@ button:hover{
     color: white;
 
 }
+
+  /* styling body section of main  */
+
+.middle_section{
+    display: flex;
+    margin:5%;
+   
+}
+
+
+.col1{
+    flex: 3;
+    
+}
+
+.one, .two{
+    color: white;
+    opacity: 0.8;
+}
+
+.name{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+
+.three{
+    color: white;
+    opacity: 0.8;
+    padding-top: 10%
+}
+
+.social_icons{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    font-size: 35px;
+    padding-top: 0.3em;
+}
+i{
+    padding-right: 0.5em;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+
+.fa-facebook:hover{
+    color: rgb(115, 115, 219);
+}
+.fa-instagram:hover{
+    color:rgb(243, 4, 44);
+}
+.fa-youtube:hover{
+    color:rgb(233, 34, 34);
+}
+.fa-github:hover{
+    color:teal;
+}
+.fa-twitter:hover{
+    color: rgb(31, 150, 197)
+}
+
+.col2{
+    flex: 2.5;
+   
+
+}
+
+.col3{
+    flex: 0.1;
+    
+}
+
+
+
