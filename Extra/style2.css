@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    /* background: url('') no-repeat; */
+    background:black;
+    background-size: 100vw 100vh;
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0%;
+  
+    
+}
+
+.photo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+    
+}
+
+
+
+.photo img{
+    height: 30vh;
+    border-radius: 50%;
+    margin: 0.8rem;
+}
+
+.fab:hover{
+    color: white;
+}
+.fa-github:hover{
+    color: teal;
+}
+.fa-facebook{
+    color:blue;
+    font-size:xx-large;
+    margin: 2rem 1rem;
+    cursor: pointer;
+}
+
+.fa-instagram{
+    color: rgb(233, 75, 101);
+    font-size:xx-large;
+    margin: 2rem 1rem;
+    cursor: pointer;
+}
+
+.fa-github{
+    color:white;
+    font-size:xx-large;
+    margin: 2rem 1rem;
+    cursor: pointer;
+}
+
+h2{
+    
+    color:lightblue;
+    margin-bottom: 1rem;
+    border:2px solid white;
+    padding: 0.8rem;
+    border-radius:5rem;
+}
+h2:hover{
+    background:lightblue;
+    color: black;
+    cursor: pointer;
+}
+p{
+    color: rgb(219, 219, 230);
+    position: relative;
+    /* font-size: 20px; */
+    border-radius: 20px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+p::after{
+    content: "";
+    border-left: 2px solid #df1515;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    animation: typing 10s steps(600) infinite;
+   overflow: hidden;
+    background-color: black;
+    
+}
+@keyframes typing {
+    
+    100%{
+    
+    left: 250%;
+   
+}
+
+}
+
+footer{
+    background-color: #000;
+    color: rgb(233, 236, 5); 
+/* border: 2px solid white; */
+text-align: center;
+height:5vh;
+padding: 5px;
+align-self: auto;
+
+}
