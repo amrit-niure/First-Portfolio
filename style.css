@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page1{
+    background-color: rgb(54, 4, 54);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle1{
+    position: absolute;
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+    background-color: red;
+    z-index: 2;
+    right: 0%;
+    top:0%;
+}
+.circle2{
+    position: absolute;
+    height: 150px;
+    border-radius: 50%;
+    width: 150px;
+    background-color: red;
+    z-index: 2;
+    left: 0%;
+    bottom:0%;
+}
+.circle3{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color:red;
+    z-index: 4;
+    right: 3%;
+   top: 40%;
+}
+.circle4{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    z-index: 4;
+    right: 25%;
+    bottom:5%;
+}
+.circle5{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 4;
+    left: 30%;
+    top:1%
+}
+.circle6{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: 4;
+    left: 30%;
+    bottom:1%;
+}
+
+.main{
+  
+    height: 85vh;
+    width: 90vw;
+    background-color: rgb(70, 12, 70);
+    z-index: 3;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+
+}
