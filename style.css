@@ -41,7 +41,7 @@
     background-color:red;
     z-index: 4;
     right: 3%;
-   top: 40%;
+   top: 35%;
 }
 .circle4{
     position: absolute;
@@ -60,7 +60,7 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     z-index: 4;
-    left: 30%;
+    left: 40%;
     top:1%
 }
 .circle6{
@@ -88,17 +88,18 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
     padding-bottom: 2%;
-    border-bottom: 1px solid purple;
+    /* border-bottom: 1px solid purple; */
 }
 .logo{
-    font-size: 40px;
-   
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
     flex:1;
+    opacity: 0.8;
 }
 .logo a{
     text-decoration: none;
@@ -111,7 +112,7 @@ nav{
     width: 2px;
     background-color: white;
     right: 50%;
-    top: 11%;
+    top: 12%;
 }
 button{
     padding: 10px;
@@ -201,7 +202,7 @@ button:hover{
     display: flex;
     justify-content:left;
     align-items: center;
-    font-size: 35px;
+    font-size: 30px;
     padding-top: 0.3em;
 }
 i{
@@ -224,6 +225,26 @@ i{
 }
 .fa-twitter:hover{
     color: rgb(31, 150, 197)
+}
+
+.extra_buttons{
+    margin-top: 10%;
+}
+.hire{
+    background-color: red;
+    color: white;
+    margin-right: 1em;
+    padding: 0.7em 2em;
+}
+.collab{
+    border: 1px solid white;
+    color: white;
+    margin-right: 1em;
+    padding: 0.7em 2em;
+}
+.collab:hover{
+    border: 1px solid rgb(70, 12, 70);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .col2{
