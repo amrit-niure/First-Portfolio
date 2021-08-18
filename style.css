@@ -84,3 +84,60 @@
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
 
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+.logo{
+    color: white;
+    flex:1;
+}
+
+.seperator{
+    position: absolute;
+    height: 7%;
+    width: 2px;
+    background-color: white;
+    right: 50%;
+    top: 11%;
+}
+button{
+    padding: 10px;
+    background-color: rgb(70, 12, 70);
+    /* border:1px solid red; */
+    border: none;
+     border-radius: 30px;
+    padding: 0.7em 1em;
+    color:rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: red;
+    color: white;
+}
+
+.links{
+    flex: 1;
+   
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    height: 100%;
+    margin-left: 2%;
+}
+.links ul li{
+    /* margin-right: 10%;    */
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+
+}
