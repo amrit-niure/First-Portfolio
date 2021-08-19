@@ -75,14 +75,15 @@
 }
 
 .main{
-  
+   
     height: 85vh;
     width: 90vw;
     background-color: rgb(70, 12, 70);
     z-index: 3;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
-
+  
+   position: relative;
 }
 nav{
     display: flex;
@@ -93,6 +94,7 @@ nav{
     margin-right: 5%;
     padding-bottom: 2%;
     /* border-bottom: 1px solid purple; */
+    position:sticky;
 }
 .logo{
     font-size: 60px;
@@ -165,6 +167,13 @@ button:hover{
     color: white;
 
 }
+header{
+    position:sticky;
+    top: 0;
+    background-color: rgb(70, 12, 70);
+    z-index: 10;
+   
+}
 
   /* styling body section of main  */
 
@@ -172,12 +181,12 @@ button:hover{
     display: flex;
     margin:5%;
    
+   flex-wrap: wrap-reverse;
 }
 
 
 .col1{
-    flex: 3;
-    
+    width:390px;
 }
 
 .one, .two{
@@ -228,7 +237,7 @@ i{
 }
 
 .extra_buttons{
-    margin-top: 10%;
+    margin-top: 20%;
 }
 .hire{
     background-color: red;
@@ -248,18 +257,174 @@ i{
 }
 
 .col2{
-    flex: 2.5;
-  position: relative;
+    box-sizing: border-box;
+    width: 350px;
 }
+
 
 .col3{
-    flex: 0.1;
-    
+    width:300px;
+    top:50%;
+    position: relative;
 }
-img{
-    height: 25em;
-    position: absolute;
-    top:-20%;
-    left: 30%;
+.image{
+    display: flex;
+    height:10em;
+    background-image: url("Extra/am.png");
+    background-repeat: no-repeat;
+    font-size: 38px;
+    margin: top -10%;
+}
 
+
+@media screen and (max-width:1024px) {
+  
+/*   
+    .links{
+        display: none;
+    } */
+    .seperator{
+        display: none;
+    }
+    .col1{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    /* .col2{
+        display: none;
+    } */
+    .main{
+        overflow-y: scroll;
+    }
+
+    .extra_buttons{
+        margin-top: 10%;
+    }
+  
+
+    .image{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .circle1{
+        position: absolute;
+        height: 200px;
+        border-radius: 50%;
+        width: 200px;
+        background-color: red;
+        z-index: 2;
+        right: -20%;
+        top:-10%;
+    }
+    .circle2{
+        position: absolute;
+        height: 150px;
+        border-radius: 50%;
+        width: 150px;
+        background-color: red;
+        z-index: 2;
+        left: -10%;
+        bottom:-5%;
+    }
+    .circle3{
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color:red;
+        z-index: 4;
+        right: -6%;
+       top: 35%;
+    }
+    .circle4{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: red;
+        z-index: 4;
+        right: 10%;
+        bottom:5%;
+    }
+    .circle5{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        z-index: 4;
+        left: 20%;
+        top:-5%
+    }
+    .circle6{
+        position: absolute;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.05);
+        z-index: 4;
+        left: 30%;
+        bottom:1%;
+    }
+    .page1{
+        overflow: hidden;
+    }
+    .extra_buttons{
+        display: flex;
+
+    }
+    .hire{
+        padding: 0.7em 1.5em;
+    }
+
+    .logo{
+        font-size:35px;
+    }
+    .name{
+        font-size: 35px;
+    }
+
+    .links ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: red; 
+        top:7%;  
+        height:88%;
+        left: 3%;
+        width: 85%;
+        border-radius: 20px;
+        /* display: none; */
+        clip-path: circle(100px at 95% -3%);
+        -webkit-clip-path:circle(100px at 95% -3%);
+        transition: all .5s ease-out;
+        pointer-events: none;
+    }
+
+.line{
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+.hamburger{
+    position:absolute;
+    z-index: 3;
+    cursor: pointer;
+    right: 5%;
+    top: 30%;
+    transform: translate(-5% -30%);
+}
+
+.links ul.open{
+    clip-path: circle(1000px at 90% -3%);
+    -webkit-clip-path:circle(1000px at 90% -3%);
+    pointer-events: all;
+}
 }
