@@ -212,7 +212,7 @@ header{
     justify-content:left;
     align-items: center;
     font-size: 30px;
-    padding-top: 0.3em;
+    padding-top: 0.5em;
 }
 i{
     padding-right: 0.5em;
@@ -237,7 +237,7 @@ i{
 }
 
 .extra_buttons{
-    margin-top: 20%;
+    margin-top: 15%;
 }
 .hire{
     background-color: red;
@@ -405,6 +405,17 @@ i{
         -webkit-clip-path:circle(100px at 95% -3%);
         transition: all .5s ease-out;
         pointer-events: none;
+    }
+    button{
+        margin-bottom: 40px;
+        border: none;
+    }
+    .button_border{
+        border: none;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
     }
 
 .line{
