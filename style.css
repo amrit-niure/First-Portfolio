@@ -249,14 +249,17 @@ i{
 
 .col2{
     flex: 2.5;
-   
-
+  position: relative;
 }
 
 .col3{
     flex: 0.1;
     
 }
+img{
+    height: 25em;
+    position: absolute;
+    top:-20%;
+    left: 30%;
 
-
-
+}
