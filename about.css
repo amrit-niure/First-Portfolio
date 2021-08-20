@@ -310,20 +310,29 @@ h1{
    align-items: center;
 }
 img{
-    height: 80%;
+    height: 70%;
 }
 
 
 
 @media screen and (max-width:1024px) {
 
+
+    .itsme ,.iam{
+        font-size: 15px;
+    }
+    .myname{
+        font-size: 40px;
+    }
+
     .myskills{
         margin: 2vh 5vh;
+        height:680px;
       padding-bottom: 10vh;
     }
 
     img{
-        height: 70%;
+        height: 60%;
     }
     .circle3 ,.circle4{
         display: none;
