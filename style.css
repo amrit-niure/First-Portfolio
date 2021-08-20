@@ -405,6 +405,7 @@ i{
         -webkit-clip-path:circle(100px at 95% -3%);
         transition: all .5s ease-out;
         pointer-events: none;
+       
     }
     button{
         margin-bottom: 40px;

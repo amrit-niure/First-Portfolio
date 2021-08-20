@@ -134,7 +134,6 @@ button:hover{
 }
 
 
-
 @media screen and (max-width:1024px) {
 
     .logo{
@@ -206,16 +205,14 @@ button:hover{
         bottom:1%;
     }
 
-
-
-
     nav ul {
         position: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: red; 
+        background: linear-gradient(to right bottom, rgba(255,255,255,0.5),rgba(128, 9, 9, 0.1));
+        backdrop-filter: blur(20px);
         top:0%;  
         height:100%;
         left: 0%;
@@ -235,7 +232,7 @@ button:hover{
         border: none;
     }
     .button_border{
-        border: 1px solid red;
+        background-color: rgb(78, 21, 78);
     }
     button:hover{
         background-color: white;
@@ -258,8 +255,8 @@ button:hover{
     }
    
     nav ul.open{
-        clip-path: inset(20% 20% 15% 20%) round 5%;
-        -webkit-clip-path:inset(25% 20% 15% 20% round 5%);
+        clip-path: inset(25% 15% 15% 15% round 5%);
+        -webkit-clip-path:inset(25% 15% 15% 15% round 5%);
         transition: all .5s ease-out;
         pointer-events: all;
     }

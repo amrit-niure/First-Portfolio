@@ -17,7 +17,7 @@
     background-color: red;
     right: 0%;
     top:0%;
-    z-index: 1;
+    z-index:1;
 }
 .circle2{
     position: absolute;
@@ -52,7 +52,7 @@
     width: 150px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    left: 40%;
+    left: 20%;
     top:5%
 }
 .circle6{
@@ -64,6 +64,15 @@
     left: 30%;
     bottom:1%;
 }
+.circle7{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    left: 50%;
+    bottom:40%;
+}
 .top{
    
 }
@@ -74,7 +83,7 @@ header{
     align-items: center;
     padding: 0em 4em;
     position: absolute;
-    z-index: 2;
+    z-index: 200;
     width: 100%;
     height: 12vh;
     background-color: rgb(78, 21, 78)
@@ -133,10 +142,204 @@ button:hover{
      
 }
 
+/* -----------------content of about me main section----------------- */
+
+.bottom{
+    top: 6vh;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+.main-content{
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    
+}
+
+.aboutme{
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.1),rgba(128, 9, 9, 0.01));
+    height: 500px;
+    width: 700px;
+    padding: 2em 3em;
+    backdrop-filter: blur(15px);
+   box-shadow: 10px 10px 10px solid black;
+   border-radius: 10px;
+}
+
+.iam , .itsme{
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 1em;
+    font-size: 20px;
+}
+.myname{
+    font-size:50px;
+    color:rgba(255, 255, 255, 0.9)
+}
+
+.whoami{
+    display: flex;
+    flex-wrap: wrap;
+}
+.the{
+    margin-right: 1em;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255,255,255,0.5);
+   color: #fff;
+    font-size: 20px;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.the:hover{
+    background: red;
+}
+.description{
+    margin: 0.5em;
+    padding: 1em 0em;
+    height: 25vh;
+    width: 100%;
+    color: white;
+    text-align: justify;
+}
+
+.myskills{
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.1),rgba(128, 9, 9, 0.01));
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+   color: #fff;
+   overflow-y: scroll;
+}
+h1{
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 2vh;
+}
+.textandprogess{
+    color: black;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content:center;
+    align-items: lefft;
+}
+.progess{
+    width: 90%;
+    height: 30%;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+.progessfill-html{
+    width: 80%;
+    height: 100%;
+    background: red;
+    border-radius: 15px;
+}
+.progessfill-css{
+    width: 70%;
+    height: 100%;
+    background: red;
+    border-radius: 15px;
+}
+.progessfill-js{
+    width: 50%;
+    height: 100%;
+    background: red;
+    border-radius: 15px;
+}
+.progessfill-c{
+    width: 80%;
+    height: 100%;
+    background: red;
+    border-radius: 15px;
+}
+.progessfill-git{
+    width: 80%;
+    height: 100%;
+    background: red;
+    border-radius: 15px;
+}
+.progessfill-mysql{
+    width: 50%;
+    height: 100%;
+    background: red;
+    border-radius: 15px;
+}
+.progessfill-php{
+    width: 30%;
+    height: 100%;
+    background: red;
+    border-radius: 15px;
+}
+.progessfill-bash{
+    width: 30%;
+    height: 100%;
+    background: red;
+    border-radius: 15px;
+}
+.border{
+    display: flex;
+    margin: 2% 5%;
+    height: 8vh;
+    width: 90%;
+    background:#fff;
+    border-radius: 30px;
+}
+.skill-logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+img{
+    height: 80%;
+}
+
 
 
 @media screen and (max-width:1024px) {
 
+    .myskills{
+        margin: 2vh 5vh;
+      padding-bottom: 10vh;
+    }
+
+    img{
+        height: 70%;
+    }
+    .circle3 ,.circle4{
+        display: none;
+    }
+    .bottom{
+        margin-right:3vh;
+        margin-top: 5vh;
+    }
+   .aboutme{
+       margin: 5vh;
+       overflow-y: scroll;
+   }
+.the{
+    margin-right: 0.5em;
+    margin-top: 1em;
+}
     .wholepage{
         position: relative;
         overflow: hidden;
@@ -145,14 +348,6 @@ button:hover{
         font-size:35px;
     }
     .circle1{
-        /* position: absolute;
-        height: 200px;
-        border-radius: 50%;
-        width: 200px;
-        background-color: red;
-        z-index: 2;
-        right: -21%;
-        top:-18%; */
         display:none;
     }
     .circle2{
@@ -215,7 +410,8 @@ button:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: red; 
+        background: linear-gradient(to right bottom, rgba(255,255,255,0.5),rgba(128, 9, 9, 0.1));
+        backdrop-filter: blur(20px);
         top:0%;  
         height:100%;
         left: 0%;
@@ -235,7 +431,10 @@ button:hover{
         border: none;
     }
     .button_border{
-        border: 1px solid red;
+        background-color: rgb(78, 21, 78);
+    }
+    .button_border:hover{
+       border:1px solid white
     }
     button:hover{
         background-color: white;
@@ -257,8 +456,8 @@ button:hover{
         transform: translate(-5% -30%);
     }
     nav ul.open{
-        clip-path: inset(20% 20% 15% 20%) round 5%;
-        -webkit-clip-path:inset(25% 20% 15% 20% round 5%);
+        clip-path: inset(25% 15% 15% 15% round 5%);
+        -webkit-clip-path:inset(25% 15% 15% 15% round 5%);
         transition: all .5s ease-out;
         pointer-events: all;
     }
