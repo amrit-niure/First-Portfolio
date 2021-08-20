@@ -411,7 +411,7 @@ i{
         border: none;
     }
     .button_border{
-        border: none;
+        border: 1px solid red;
     }
     button:hover{
         background-color: white;

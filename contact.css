@@ -145,14 +145,15 @@ button:hover{
         overflow: hidden;
     }
     .circle1{
-        position: absolute;
+        /* position: absolute;
         height: 200px;
         border-radius: 50%;
         width: 200px;
         background-color: red;
         z-index: 2;
         right: -20%;
-        top:-10%;
+        top:-10%; */
+        display: none;
     }
     .circle2{
         position: absolute;
@@ -215,19 +216,34 @@ button:hover{
         align-items: center;
         justify-content: center;
         background-color: red; 
-        top:12%;  
-        height:88%;
+        top:0%;  
+        height:100%;
         left: 0%;
         width: 100%;
         border-radius: 20px;
         /* display: none; */
-        clip-path: circle(100px at 95% -3%);
-        -webkit-clip-path:circle(100px at 95% -3%);
+        clip-path: inset(100%);
+        -webkit-clip-path:inset(100%);
         transition: all .5s ease-out;
         pointer-events: none;
-     
+        z-index: 3;
+        padding-top: 95px;
+       
     }
 
+    button{
+        
+        margin-bottom: 30px;
+
+        border: none;
+    }
+    .button_border{
+        border: 1px solid red;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
 
     .line{
         width: 30px;
@@ -245,8 +261,9 @@ button:hover{
     }
    
     nav ul.open{
-        clip-path: circle(1000px at 90% -3%);
-        -webkit-clip-path:circle(1000px at 90% -3%);
+        clip-path: inset(20% 20% 15% 20%) round 5%;
+        -webkit-clip-path:inset(25% 20% 15% 20% round 5%);
+        transition: all .5s ease-out;
         pointer-events: all;
     }
 }
