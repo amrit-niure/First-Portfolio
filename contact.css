@@ -133,10 +133,152 @@ button:hover{
      
 }
 
+.contactme{
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.1),rgba(128, 9, 9, 0.01));
+    width: 90%;
+    height: 80vh;
+    top: 5vh;
+    position: absolute;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    
+}
+.left{
+    flex: 1;
+    height: 100%;
+    background-color: rgba(247, 1, 1,0.9);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.right{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    align-items: center;
+    height: 100%;
+}
+.texts{
+    color: white;
+    padding: vh;
+    height: 15vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.2),rgba(128, 9, 9, 0.09));
+    padding: 3vh 7vh;
+    width: 80%;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 90%;
+    border-radius: 20px;
+    color: white;
 
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    
+}
+.input-group{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px 20px;
+    outline: 0;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.2),rgba(128, 9, 9, 0.09));
+   border: none;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: white;
+    cursor: text;
+    transition: 0.2s;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 15px;
+    
+}
+.fas{
+    margin-right: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 48%;
+}
+.submit-button{
+   margin-top: -3%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
 
 @media screen and (max-width:1024px) {
 
+    .input-group{
+        margin-bottom: 30px;
+    }
+    input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    font-size: 13px;
+    
+}
+.submit-button{
+   
+   margin-top: 0;
+ }
+.contactme{
+    margin-top: 10vh;
+
+}
+    form{
+        margin-top: -2vh;
+      
+    }
+    .form{
+       height: 100%;
+       width: 100%;
+       padding-top: 10vh;
+    }
+
+    .left{
+        display: none;
+    }
     .logo{
         font-size:35px;
     }
@@ -225,6 +367,7 @@ button:hover{
         pointer-events: none;
         z-index: 3;
         padding-top: 95px;
+        z-index: 5;
     }
     button{
         
@@ -260,5 +403,6 @@ button:hover{
         -webkit-clip-path:inset(25% 15% 15% 15% round 5%);
         transition: all .5s ease-out;
         pointer-events: all;
+        z-index: 5;
     }
 }
