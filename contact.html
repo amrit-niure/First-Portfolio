@@ -70,23 +70,23 @@
                     <div class="texts"> <h1>Get in touch</h1>
                      <p>let's connect with each other. </p>
                  </div>
-                    <form action="">
+                    <form action="contact.php" method="POST">
                        <div class="row"><div class="input-group">
-                            <input type="text" required id="name">
+                            <input type="text" required id="name" name="name">
                             <label for="name"><i class="fas fa-user"></i>Your Name</label>
                         </div>
                         <div class="input-group">
-                            <input type="text" required id="number">
+                            <input type="text" required id="number name="number">
                             <label for="number"><i class="fas fa-phone-square"></i>Phone</label>
                         </div>
                     </div> 
                         <div class="input-group">
-                            <input type="email" required id="email">
+                            <input type="email" required id="email" name="email">
                             <label for="email"><i class="fas fa-envelope"></i>Email</label>
                         </div>
                     
                         <div class="input-group">
-                           <textarea id="message" rows="5" required></textarea>
+                           <textarea id="message" name="message" rows="5" required></textarea>
                             <label for="message"><i class="fas fa-comments"></i>Your Message</label>
                         </div>
                         <div class="submit-button">
