@@ -246,8 +246,91 @@ textarea:valid~label{
     align-items:center;
 }
 
+/* -----------------left part-------------------- */
+.xray{
+    -webkit-clip-path: polygon(0 87%, 100% 11%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 87%, 100% 11%, 100% 100%, 0% 100%);
+    background-color: rgb(75, 18, 75);
+    height: 100%;
+    width: 100%;
+}
+.left{
+    position: relative;
+    overflow: hidden;
+}
+
+.yray{
+    -webkit-clip-path: inset(0 73% 60% 10% );
+    clip-path: inset(0 73% 60% 10% );
+    background-color:white;
+    
+    position: absolute;
+    top: -2%;
+     height: 100%;
+    width: 100%;
+}
+.contacttext{
+transform: rotate(-90deg);
+color:rgb(133, 23, 133);
+position: absolute;
+left: -1.8%;
+top: 15%;
+z-index: 2;
+font-weight: 100;
+}
+
+.social_icons{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    font-size: 30px;
+    padding-top: 0.5em;
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+    z-index: 2;
+    color: white;
+}
+.fa-facebook:hover{
+    color: rgb(115, 115, 219);
+}
+.fa-instagram:hover{
+    color:rgb(243, 4, 44);
+}
+.fa-youtube:hover{
+    color:rgb(233, 34, 34);
+}
+.fa-github:hover{
+    color:teal;
+}
+.fa-twitter:hover{
+    color: rgb(31, 150, 197)
+}
+.findme{
+    position: absolute;
+    color: white;
+    left: 13%;
+    font-weight: 100;
+    bottom: 12%;
+    font-size: 25px;
+    z-index: 2;
+}
+
+i{
+    padding-right: 0.6em;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+.fa-paper-plane{
+    margin-right: 0;
+    margin-left: 20px;
+}
+
 @media screen and (max-width:1024px) {
 
+    .xray, .yray , .contacttext , .social_icons , .findme{
+        display: none;
+    }
     .input-group{
         margin-bottom: 30px;
     }
@@ -259,7 +342,6 @@ textarea:valid~label{
     
 }
 .submit-button{
-   
    margin-top: 0;
  }
 .contactme{
